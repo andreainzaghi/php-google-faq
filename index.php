@@ -9,8 +9,6 @@ Nei prossimi mesi lavoreremo a stretto contatto con le autorità per la protezio
 Quando cerchi un nome, potresti trovare una notifica in cui viene spiegato che i risultati potrebbero essere stati modificati nel rispetto delle leggi europee per la protezione dei dati. Mostriamo questa notifica agli utenti europei quando cercano la maggior parte dei nomi, non soltanto le pagine che sono state soggette a una rimozione."
  ],
 ];
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -20,15 +18,18 @@ Quando cerchi un nome, potresti trovare una notifica in cui viene spiegato che i
   </head>
   <body>
     <h1>
-<?php     foreach ($people as $key) {
+<?php
+ foreach ($people as $key) {
       // code...
       echo "{$key['domande']} ";
     } ?>
-
     </h1>
-    <p><?php     foreach ($people as $key) {
+    <p>
+      <?php
+      foreach ($people as $key) {
           // code...
           echo " {$key['risposte']} ";
-        } ?></p>
+        } ?>
+      </p>
   </body>
 </html>
