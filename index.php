@@ -27,13 +27,13 @@ Scopri quali misure adottiamo per garantire protezione e sicurezza alle tue info
     <title></title>
   </head>
   <body>
-    <h2>
+
 <?php
  foreach ($people as $key) {
       // code...
-      echo "{$key['domande']} <br> {$key['risposte']} <br> ";
+      echo "  <h2>{$key['domande']}   </h2> <br> <p>{$key['risposte']}</p> <br> ";
     } ?>
-  </h2>
+
 
   </body>
 </html>
